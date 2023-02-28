@@ -56,9 +56,9 @@ h2 {
 .progress-text {
 	display: none;
 	position: absolute;
-	right: -40px;
-	top: -22px;
-	width: 40px;
+	right: 18px;
+	top: -1px;
+	width: 75px;
 	text-align: center;
 }
 
