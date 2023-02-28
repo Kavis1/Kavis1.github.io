@@ -1,0 +1,75 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	padding: 20px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+}
+
+section {
+	margin: 40px auto;
+	max-width: 800px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.skill {
+	font-size: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.progress-bar {
+	background-color: #555;
+	border-radius: 5px;
+	height: 20px;
+	position: relative;
+	width: 100px;
+	transition: all 0.5s ease;
+}
+
+.progress {
+	background-color: #007FFF;
+	border-radius: 5px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease;
+}
+
+.progress-text {
+	display: none;
+	position: absolute;
+	right: -40px;
+	top: -22px;
+	width: 40px;
+	text-align: center;
+}
+
+.skill:hover .progress-bar {
+	width: 120px;
+}
+
+.skill:hover .progress-text {
+	display: block;
+}
+
+.skill:hover .progress {
+	width: calc(100% - 120px);
+}
